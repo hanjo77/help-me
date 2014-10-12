@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>rtcio-demo-quickconnect</title>
+<link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../../layout.css" />
+</head>
+<body>
+<div class="layout layout-hz">
+	<div id="map-canvas"></div>
+		<div class="chat">
+			<h4>Chat</h4>
+			<input type="text" id="commandInput" placeholder="Type something"/>
+			<ul class="message-list" id="messageList"></ul>		
+		</div>
+			<div class="container">
+				<div class="remote"></div>
+				<div class="remote"></div>
+			</div>
+			<div class="local"></div>		
+	<div id="start">
+		<label for="name">
+			Enter your name:
+		</label>
+		<input type="text" id="userName" maxlength="16" /><br />
+		<button id="submitName">Submit</button>
+	</div>
+</div>
+<script>
+
+var myLatLong, map;
+var geoCoords = {};
+var userName = "";
+
+</script>
+<script src="../../rtc.io/primus.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="../../index.js"></script>
+<script src="../../map.js"></script>
+</body>
+</html>
